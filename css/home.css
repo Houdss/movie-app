@@ -1,0 +1,284 @@
+/* General Styles */
+* { 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    background: #000;
+}
+
+.container-one {
+    height: 10px;
+    width: 90%;
+    margin: 0 auto; 
+}
+
+/* NAV */
+.nav-wrapper {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+ 
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-hover {
+    background: #e60023;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-hover:hover {
+    background: #c4001d;
+
+}
+
+/* section 1 */
+.main-section { 
+    margin-top: 80px;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    
+}
+
+.slide-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-item img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Place the overlay below the content */
+}
+
+.slide-item-content {
+    position: absolute;
+    top: 30%; /* Center vertically */
+    left: 20%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact center */
+    color: #fff;
+    z-index: 2; /* Ensure the content is above the overlay */
+    max-width: 80%; /* Prevent content from overflowing */
+}
+
+.content-wrapper {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.content-title {
+    font-size: 60px;
+    margin-top: 70px;
+}
+
+.movie-details {
+    margin-bottom: 60px;
+}
+
+.movie-detail {
+    display: inline-block;
+    margin-right: 10px;
+}
+.movie
+/* Grid Section */
+.section {
+    margin: 50px 0;
+}
+
+.container-two {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.section {
+    margin: 50px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+.grid-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Pricing Section */
+.section {
+    padding: 20px;
+}
+
+.container_three {
+    display: flex;
+    justify-content: center; /* Center the content */
+}
+
+.pricing {
+    text-align: center;
+}
+
+.pricing-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.pricing-list {
+    display: flex;
+    gap: 20px; /* Space between columns */
+}
+
+.col-4 {
+    flex: 1; /* Ensure all columns are equal width */
+    max-width: 300px; /* Optional: Limit maximum width of each column */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.pricing-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Distribute space between children */
+}
+
+.pricing-box.highlight {
+    background: #e60023;
+}
+
+.pricing-box-header {
+    margin-bottom: 10px;
+}
+
+.pricing-name {
+    font-size: 20px;
+}
+
+.pricing-price {
+    font-size: 24px;
+}
+
+.pricing-box-content p {
+    margin: 5px 0;
+}
+
+.pricing-box-action a {
+    margin-top: 20px;
+    display: inline-block; /* Ensure button width is only as wide as content */
+    padding: 10px 20px; /* Adjust button padding as needed */
+}
+/* Gray Button for Premium Pricing */
+.btn-gray {
+    background: #ccc; /* Gray background */
+    color: #000; /* Dark text color for contrast */
+}
+
+.btn-gray:hover {
+    background: #bbb; /* Slightly darker gray on hover */
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.footer-logo img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
